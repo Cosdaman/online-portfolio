@@ -89,6 +89,9 @@ p {
   text-justify: auto;
   color: white;
   user-select: none;
+  width: 33%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projects {
