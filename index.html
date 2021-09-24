@@ -1,23 +1,62 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Kevin Ang's Portfolio</title>
 </head>
 
 <body>
     <header>
-        <!-- <nav>
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-            </ul>
-        </nav> -->
+        <h1>Kevin Ang's Portfolio</h1>
     </header>
-    <section class='contentPlaceholder1'>
-        <h1>UNDER CONSTRUCTION</h1>
-    </section>
-    <footer>
 
-    </footer>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <div class="profile">
+            <img class="profilePhoto" src="./assets/images/asariAvatar.png" alt="Cosdaman Avatar Profile Picutre">
+        </div>
+
+        <div id="about">
+            <h2>About</h2>
+            <p>Hi there! My name is Kevin! </p>
+            <p>I'm currently a developer who is undertaking the University of Washington's Coding Bootcamp.</p>
+        </div>
+
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <section class="cardMain">
+                    <a href="https://github.com/Cosdaman/bootcampHW2-AdvCSSPortfolio">
+                        <h3>Portfolio</h3>
+                        <img class="cardImage" src="./assets/images/portfolioPreview.png" alt="Portfolio banner image">
+                    </a>
+                </section>
+                <section class="card">
+                    <a href="https://github.com/Cosdaman/bootcampHW1">
+                        <h3>Code Refactor</h3>
+                        <img class="cardImage" src="./assets/images/codeRefactorPreview.png"
+                            alt="Code Refactor banner image">
+                    </a>
+                </section>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>Got a question for me?</p>
+            <p>Feel free to shoot me an e-mail!</p>
+            <p>E-mail: <a href="mailto:kjc.ang@gmail.com">kjc.ang@gmail.com</a></p>
+        </div>
+
+    </main>
 </body>
+
+</html>
