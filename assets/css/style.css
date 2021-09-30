@@ -154,7 +154,7 @@ p>a {
   align-items: center;
 }
 
-.github::before{
+.externalLinks::before{
   content:"";
   display:block;
   width: 48px;
@@ -162,28 +162,18 @@ p>a {
   float: left;
   margin: 0 6px 0 0;
   transform: translate(0,-30%);
+}
+
+#github::before{
   background: url(../logos/githubicon.png);
 }
 
-.resume::before{
+#resume::before{
   content:"" / "Resume by Ryan Beck from the Noun Project";
-  display:block;
-  width: 48px;
-  height: 48px;
-  float: left;
-  margin: 0 6px 0 0;
-  transform: translate(0,-30%);
   background: url(../logos/resumeicon.png);
 }
 
-.linkedIn::before{
-  content:"";
-  display:block;
-  width: 48px;
-  height: 48px;
-  float: left;
-  margin: 0 6px 0 0;
-  transform: translate(0,-30%);
+#linkedIn::before{
   background: url(../logos/linkedinicon.png);
 }
 
