@@ -4,84 +4,96 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Kevin Ang's Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <h1>Kevin Ang</h1>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#links">Links</a>
-    </nav>
-
-    <main>
-        <div class="profile">
-            <img class="profilePhoto" src="./assets/images/asariAvatar.png" alt="Cosdaman Avatar Profile Picutre">
-        </div>
-
-        <div id="about">
-            <h2>About</h2>
-            <p>Hi there! My name is Kevin! </p>
-            <p>I'm currently undergoing a course to earn a certificate in full stack web development with newly acquired
-                and developing skills in the MERN stack; in addition to existing knowledge and skills in Python, Java,
-                mySQL, and GIT.</p>
-            <p>I am usually known as a leader, shot-caller, and passionate problem-solver within a team.</p>
-            <p>Each project that I am involved with is aimed to have quick, innovative, and efficient solutions towards
-                problems; with a focus on maintaining a good client relationship.</p>
-            <p>I look forward to using my skills to create and engineer functional solutions while ensuring the utmost
-                quality and performance for clients.</p>
-        </div>
-
-        <div id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <section class="cardMain">
-                    <a href="https://github.com/Cosdaman/bootcampHW3-JavascriptPWGen" target="_blank">
-                        <h3>Password Generator</h3>
-                        <img class="cardImage" src="./assets/images/pwgenPreview.png" alt="password generator banner">
-                    </a>
-                </section>
-                <section class="card">
-                    <a href="https://github.com/Cosdaman/bootcampHW2-AdvCSSPortfolio" target="_blank">
-                        <h3>Portfolio</h3>
-                        <img class="cardImage" src="./assets/images/portfolioPreview.png" alt="Portfolio banner image">
-                    </a>
-                </section>
-                <section class="card">
-                    <a href="https://github.com/Cosdaman/bootcampHW1" target="_blank">
-                        <h3>Code Refactor</h3>
-                        <img class="cardImage" src="./assets/images/codeRefactorPreview.png"
-                            alt="Code Refactor banner image">
-                    </a>
-                </section>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span id="logo">Portfolio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#links">Links</a>
+                </div>
             </div>
         </div>
-
-        <div id="contact">
-            <h2>Contact</h2>
-            <p>Got a question for me?</p>
-            <p>Feel free to shoot me an e-mail!</p>
-            <p>E-mail: <a href="mailto:kjc.ang@gmail.com">kjc.ang@gmail.com</a></p>
+    </nav>
+<hr>
+    <div class="container-fluid row py-3">
+        <img class="profilePhoto" src="./assets/images/asariAvatar.png" alt="Cosdaman Avatar Profile Picutre">
+    </div>
+<hr>
+    <div class="row mx-auto" id="about">
+        <h2>About</h2>
+        <p>Hi there! My name is Kevin! </p>
+        <p>I'm currently undergoing a course to earn a certificate in full stack web development with newly acquired
+            and developing skills in the MERN stack; in addition to existing knowledge and skills in the following:
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>mySQL</li>
+            <li>GIT</li>
+        </ul>
+        </p>
+        <p>I am usually known as a leader, shot-caller, and passionate problem-solver within a team.</p>
+        <p>Each project that I am involved with is aimed to have quick, innovative, and efficient solutions towards
+            problems; with a focus on maintaining a good client relationship.</p>
+        <p>I look forward to using my skills to create and engineer functional solutions while ensuring the utmost
+            quality and performance for clients.</p>
+    </div>
+    <hr>
+    <div class="row-12">
+        <h2>Projects</h2>
+    </div>
+    <div class="col d-flex" id="projects">
+        <div class="row card featuredCard d-flex">
+            <div class="card-header">
+                Featured
+            </div>
+            <img src="./assets/images/pwgenPreview.png" class="card-img-top" alt="password generator banner">
+            <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <p class="card-text">Password generator utilizing basic javascript components.</p>
+                <a href="https://github.com/Cosdaman/bootcampHW3-JavascriptPWGen" class="btn btn-primary">Link to
+                    Repo</a>
+            </div>
         </div>
+    </div>
 
-        <div id="links">
-            <h2>Links</h2>
-            <section class="links">
-                <a id="github" class="externalLinks" href="https://github.com/Cosdaman" target="_blank">Github</a>
-                <a id="resume" class="externalLinks" href="assets/files/resume.pdf" target="_blank">Resume</a>
-                <a id="linkedIn" class="externalLinks" href="https://www.linkedin.com/in/kevin-jc-ang/"
-                    target="_blank">LinkedIn</a>
-            </section>
+    <hr>
+    <div class="container-fluid row" id="contact">
+        <h2>Contact</h2>
+        <p>Got a question for me?</p>
+        <p>Feel free to shoot me an e-mail!</p>
+        <p>E-mail: <a href="mailto:kjc.ang@gmail.com">kjc.ang@gmail.com</a></p>
+    </div>
+
+    <hr>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container links" id="links">
+            <a id="github" class="externalLinks" href="https://github.com/Cosdaman" target="_blank"></a>
+            <a id="resume" class="externalLinks" href="assets/files/resume.pdf" target="_blank"></a>
+            <a id="linkedIn" class="externalLinks" href="https://www.linkedin.com/in/kevin-jc-ang/" target="_blank"></a>
         </div>
+    </footer>
 
-    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 </body>
 
 </html>
