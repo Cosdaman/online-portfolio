@@ -58,16 +58,21 @@ li {
   justify-content: space-around;
 }
 
+#otherProjects{
+  justify-content: center;
+}
+
 .card {
-  width: 30rem;
+  max-width: 25rem;
   transition: all 0.4s ease-in-out;
   background-color: var(--lightcolor);
   border-style: solid;
   border-width: 1px;
+  margin: 1rem;
 }
 
 .featuredCard {
-  width: 40rem;
+  max-width: 40rem;
 }
 
 .card-header, .card-title {
