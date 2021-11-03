@@ -31,7 +31,6 @@ h2 {
   margin-bottom: 2vh;
 }
 
-
 li {
   text-justify: auto;
   color: white;
@@ -46,7 +45,7 @@ p {
   color: white;
 }
 
-hr{
+hr {
   border-width: 0px;
   visibility: hidden;
 }
@@ -55,11 +54,11 @@ li {
   text-align: left;
 }
 
-#projects {
+#featuredProject {
   justify-content: space-around;
 }
 
-.card{
+.card {
   width: 30rem;
   transition: all 0.4s ease-in-out;
   background-color: var(--lightcolor);
@@ -67,15 +66,13 @@ li {
   border-width: 1px;
 }
 
-.featuredCard{
+.featuredCard {
   width: 40rem;
 }
 
-.card-header, .card-title{
+.card-header, .card-title {
   color: var(--headerColors);
 }
-
-
 
 p>a {
   color: var(--headerColors);
@@ -109,12 +106,11 @@ p>a {
   background: url(../logos/linkedinicon.png);
 }
 
-
-.card:hover{
+.card:hover {
   box-shadow: 0 0 10px 10px var(--headerColors);
 }
 
-.card:hover:before{
+.card:hover:before {
   transform: scale(1.2);
   box-shadow: 0 0 15px var(--headerColors);
   filter: blur(3px);
