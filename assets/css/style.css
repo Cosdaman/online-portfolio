@@ -58,7 +58,7 @@ li {
   justify-content: space-around;
 }
 
-#otherProjects{
+#otherProjects {
   justify-content: center;
 }
 
@@ -69,6 +69,12 @@ li {
   border-style: solid;
   border-width: 1px;
   margin: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .featuredCard {
@@ -96,6 +102,11 @@ p>a {
   float: left;
   margin: 0 6px 0 0;
   transform: translate(0, -30%);
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: space-between;
 }
 
 #github::before {
