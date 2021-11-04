@@ -9,6 +9,7 @@ body {
   background-color: var(--darkcolor2);
   font-family: Arial;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .profilePhoto {
