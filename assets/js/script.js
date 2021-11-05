@@ -84,6 +84,5 @@ for (let i = 0; i < projects.length; i++) {
         divEl3.append(aEl);
         divEl3.append(aEl2);
     }
-
 }
 $(".btn-secondary").attr('target', '_blank');
