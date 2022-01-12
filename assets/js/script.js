@@ -17,6 +17,22 @@ console.log("js script connected")
 
 const projects = [
     {
+        type: 'featured',
+        name: 'Joint Effort',
+        description: "This application will assist users in choosing a cannabis dispensary and a food truck near one another so that they can pick up both in a fast and efficient manner.",
+        screenshotLink: 'https://raw.githubusercontent.com/mteubnerfoster/project-2-electric-boogaloo/main/public/assets/photos/jointefforthomepage.jpg',
+        repoLink: 'https://github.com/mteubnerfoster/project-2-electric-boogaloo',
+        liveLink: 'https://joint-effort-kohmm.herokuapp.com/',
+    },
+    {
+        type: 'normal',
+        name: 'Tech Blog',
+        description: "This is a tech-blog that features user authentication, password hashing, and database usage. The website is deployed on Heroku, and uses JawsDB MySQL2 as its database.",
+        screenshotLink: 'https://user-images.githubusercontent.com/3162991/147687054-56968d86-3f6b-419c-8137-e2b52ca1a358.png',
+        repoLink: 'https://github.com/Cosdaman/BCHW14-MVC',
+        liveLink: 'https://bchw14mvc.herokuapp.com/',
+    },
+    {
         type: 'normal',
         name: 'Discord Event Builder',
         description: "This application is designed to help users with event announcements for discord.",
@@ -42,7 +58,7 @@ const projects = [
         liveLink: 'https://cosdaman.github.io/BCHW5-DayPlanner/',
     },
     {
-        type: 'featured',
+        type: 'normal',
         name: 'Impulse Flights',
         description: "This is an application built by a team which utilizes two separate third-party APIs to display data to the user.",
         screenshotLink: 'https://github.com/Williamskj/Project-01/raw/main/assets/screenshots/LandingView.PNG',
